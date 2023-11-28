@@ -1,8 +1,9 @@
+import logo from '../assets/logo.svg';
 const LandingPage = () => {
     return (
-        <div>
-            <h1>Landing Page</h1>
-        </div>
+        <>
+            <img src={logo} />
+        </>
     );
 }
 
