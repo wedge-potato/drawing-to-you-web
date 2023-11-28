@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-      <BrowserRouter basename='/noc-client'>
+      <BrowserRouter basename='/drawing-to-you-web'>
           <Routes>
               <Route path="/" element={<LandingPage/>}/>
           </Routes>
