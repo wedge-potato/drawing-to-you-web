@@ -29,15 +29,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: 'pnpm'
+          cache: 'yarn'
 
       #
       - name: Install Packages
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       # Build
       - name: Build
-        run: pnpm run build && cp dist/index.html dist/404.html
+        run: yarn run build && cp dist/index.html dist/404.html
 
       # Deploy
       - name: Deploy
